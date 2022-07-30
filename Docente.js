@@ -9,7 +9,3 @@ class Docente extends User {
         return `estudante ${estudante} passou no curso ${curso}.`;
     }
 }
-
-const novoDocente = new Docente('Juliana', 'ju@email.com', '2021-01-01');
-console.log(novoDocente.exibeInfos());
-console.log(novoDocente.aprovaEstudante('Caio', 'JavaScript'));

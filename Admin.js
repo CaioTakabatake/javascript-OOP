@@ -9,8 +9,3 @@ class Admin extends User {
         return `Curso de ${nomeDoCurso} criado com ${vagas} vagas`;
     }
 }
-
-const novoAdmin = new Admin('Caio', 'caio@email.com', '2022-01-01');
-console.log(novoAdmin);
-console.log(novoAdmin.exibeInfos());
-console.log(novoAdmin.criarCurso('JavaScript', 300));
