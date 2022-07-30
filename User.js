@@ -11,3 +11,7 @@ class User {
         return `${this.nome}, ${this.email}`;
     }
 }
+
+const novoUser = new User('Caio', 'caio@email.com', '2022-01-01');
+console.log(novoUser);
+console.log(novoUser.exibeInfos());
