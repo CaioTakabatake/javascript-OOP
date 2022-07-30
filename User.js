@@ -18,7 +18,12 @@ export default class User {
     get role() { return this.#role; }
     get ativo() { return this.#ativo; }
 
-    set nome(novoNome) { this.#nome = novoNome; }
+    set nome(novoNome) {
+        if (novoNome === '') {
+            throw new Error('nome must not be empty');
+        }
+        this.#nome = novoNome;
+    }
 
     exibeInfos() {
         return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`
