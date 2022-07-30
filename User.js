@@ -18,7 +18,7 @@ export default class User {
     get role() { return this.#role; }
     get ativo() { return this.#ativo; }
 
-    exibirInfos() {
+    exibeInfos() {
         return `${this.nome}, ${this.email}, ${this.nascimento}, ${this.role}, ${this.ativo}`
     }
 }
