@@ -23,6 +23,7 @@ export default class User {
     }
 
     exibeInfos() {
-        return `${this.#nome}, ${this.#email}`;
+        const objUser = this.#montaObjUser();
+        return `${objUser.nome}, ${objUser.email}, ${objUser.nascimento}, ${objUser.role}, ${objUser.ativo}`;
     }
 }
