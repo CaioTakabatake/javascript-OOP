@@ -19,11 +19,17 @@
 // console.log(novoUser.role);
 
 const user = {
+    init: function (nome, email) {
+        this.nome = nome;
+        this.email = email;
+    },
+
     exibirInfos(nome) {
-        return nome;
+        return this.nome;
     }
 }
 
 const novoUser = Object.create(user);
-console.log(novoUser.exibirInfos('Caio'));
-console.log(user.isPrototypeOf(novoUser));
+novoUser.init('Caio', 'caio@email.com');
+console.log(novoUser.exibirInfos());
+// console.log(user.isPrototypeOf(novoUser));
